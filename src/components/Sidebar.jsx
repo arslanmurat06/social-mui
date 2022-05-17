@@ -12,7 +12,6 @@ import AddAlarmIcon from "@mui/icons-material/AddAlarm";
 import AddReactionIcon from "@mui/icons-material/AddReaction";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import ModeNightIcon from "@mui/icons-material/ModeNight";
-import { SetMealOutlined } from "@mui/icons-material";
 
 const Sidebar = ({ setMode, mode }) => {
   return (

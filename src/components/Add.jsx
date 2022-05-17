@@ -20,7 +20,6 @@ import {
   PersonAdd,
   VideoCameraBack,
 } from "@mui/icons-material";
-import { flexbox } from "@mui/system";
 
 const StyledModal = styled(Modal)({
   display: "flex",
