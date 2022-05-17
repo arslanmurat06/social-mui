@@ -12,8 +12,9 @@ import AddAlarmIcon from "@mui/icons-material/AddAlarm";
 import AddReactionIcon from "@mui/icons-material/AddReaction";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import ModeNightIcon from "@mui/icons-material/ModeNight";
+import { SetMealOutlined } from "@mui/icons-material";
 
-const Sidebar = () => {
+const Sidebar = ({ setMode, mode }) => {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed ">
@@ -72,7 +73,9 @@ const Sidebar = () => {
               <ListItemIcon>
                 <ModeNightIcon />
               </ListItemIcon>
-              <Switch />
+              <Switch
+                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+              />
             </ListItemButton>
           </ListItem>
         </List>
