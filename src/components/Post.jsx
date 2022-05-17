@@ -14,7 +14,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ShareIcon from "@mui/icons-material/Share";
 
-const Post = () => {
+const Post = ({ imageURI }) => {
   return (
     <Card sx={{ margin: 5 }}>
       <CardHeader
@@ -34,7 +34,7 @@ const Post = () => {
       <CardMedia
         component="img"
         height="20%"
-        image="https://images.pexels.com/photos/4534200/pexels-photo-4534200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        image={imageURI}
         alt="Paella dish"
       />
       <CardContent>

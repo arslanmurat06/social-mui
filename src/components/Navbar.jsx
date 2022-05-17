@@ -56,7 +56,7 @@ const Navbar = () => {
         </Typography>
         <PetsIcon sx={{ display: { xs: "block", sm: "none" } }} />
         <Search>
-          <InputBase placeholder="Search ..." />
+          <InputBase color="secondary" placeholder="Search ..." />
         </Search>
         <Icons>
           <Badge badgeContent={4} color="error">
